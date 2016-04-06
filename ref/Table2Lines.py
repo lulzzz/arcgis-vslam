@@ -22,9 +22,9 @@
 #  no warranty, expressed or implied, blah, blah, blah 
 # ---------------------------------------------------------------------------
 
-import os, arcgisscripting
+import os, arcgisscripting, arcpy
 gp = arcgisscripting.create(9.3)
-gp.Overwriteoutput = 1
+gp.Overwriteoutput = True
 
 #I use one search cursor and cache all the points in a dictionary.
 #This avoids creating a search cursor for each point as lines are processed
